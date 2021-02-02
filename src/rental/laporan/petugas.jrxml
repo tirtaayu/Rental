@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="petugas" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="399a175e-f7d5-4777-8288-1341db072199">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from petugas]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tlpn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="almt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="174" y="3" width="381" height="37" uuid="04705773-e505-4e59-9e28-53cfc93b4ffc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CV TRISTIADI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="40" width="381" height="38" uuid="d1574508-fa2d-450a-81d3-3a0b69644b16"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl.H. Tohir II RT.3/RW.4, Jagakarsa, jakarta selatan, Jakarta 12620]]></text>
+			</staticText>
+			<image>
+				<reportElement x="1" y="3" width="184" height="77" uuid="ff5b55d1-db15-4b63-90fe-886a63d6fbd1"/>
+				<imageExpression><![CDATA["C:\\Users\\User\\Documents\\rental\\rental\\src\\rental\\gambar\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="4" width="554" height="20" forecolor="#FFFFFF" backcolor="#25176E" uuid="6a570357-1de8-4bbf-9a79-f8fc4c42b697"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data "Petugas" CV TRISTIADI]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="23" width="554" height="1" uuid="2a9596ee-ad70-45f8-a417-da6e334eea76"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="2" width="100" height="20" uuid="f55759eb-d624-4c7c-93ae-d9c6ed794f43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="2" width="151" height="20" uuid="5a9c6d00-c51b-4f37-b68b-33a969e161e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="2" width="110" height="20" uuid="e3739e6c-d3b8-4934-a0a2-d8cf80cff8f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="2" width="195" height="20" uuid="4daefb02-f0cb-4076-b31c-316e6a3933bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="5" width="100" height="20" uuid="907b6e10-402f-4103-9f46-45dae835a998"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="5" width="151" height="20" uuid="5a98fb56-5b19-43db-99d2-e124d8388ac9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="251" y="5" width="110" height="20" uuid="f10e109b-a691-4c51-8d4c-d1d8c8fba229"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tlpn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="5" width="195" height="20" uuid="7fa4aaaf-c4fb-400c-b75e-bf7f90129273"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{almt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="361" y="15" width="39" height="20" uuid="1d4c71cf-05c1-4329-a735-edbbf40acdb6"/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="399" y="15" width="139" height="20" uuid="f7e98102-e1b1-4f03-beaf-78af536db837"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="361" y="80" width="177" height="20" uuid="b874073d-471c-40e6-a72c-256b9573d529"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kresno Pambudi]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

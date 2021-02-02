@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bayar" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4d61b816-4412-4228-839a-470fe9bd6a23">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from bayar]]>
+	</queryString>
+	<field name="no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_petugas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_petugas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_sewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_sewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ktp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_driver" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="merk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nopol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bayar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="denda" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="309" y="42" width="402" height="38" uuid="0f3f4f77-70b7-43a6-9fc0-b10faf005e37"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl.H. Tohir II RT.3/RW.4, Jagakarsa, jakarta selatan, Jakarta 12620]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="309" y="5" width="402" height="37" uuid="056d3629-583d-4b98-ba90-b659f5244479"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CV TRISTIADI]]></text>
+			</staticText>
+			<image>
+				<reportElement x="50" y="5" width="210" height="75" uuid="14891c79-8e4b-4a40-a997-fe37996cdcd9"/>
+				<imageExpression><![CDATA["C:\\Users\\User\\Documents\\rental\\rental\\src\\rental\\gambar\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="0" width="802" height="20" forecolor="#FFFFFF" backcolor="#25176E" uuid="105e1ca8-7ad7-48cf-960f-762a1caa8e11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data "Pembayaran" CV TRISTIADI]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="23" width="801" height="1" uuid="89a288b2-69d8-4538-a7d5-4fda3ae9cf1e"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="2" width="49" height="20" uuid="e46a0971-db2c-422f-88fc-f793e0f00ae2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Bayar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="2" width="56" height="20" uuid="9f1c2e74-aa9d-40c9-bcaa-63d2a0d1731a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tgl Bayar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="2" width="54" height="20" uuid="dea9343d-b496-4260-8bfd-3cd1ffac6e78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="2" width="82" height="20" uuid="47aeb70d-3a5c-4f92-80c5-bdea140d0185"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="242" y="2" width="48" height="20" uuid="eb3ba175-2315-47cd-bebb-90a8713eb390"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="2" width="57" height="20" uuid="2d41c493-ba6b-45e5-8353-0d3ed0045775"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tgl Sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="2" width="55" height="20" uuid="7949e5da-0783-44c4-9efe-c2e3cdba2dab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. KTP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="2" width="70" height="20" uuid="347c8381-bc5d-47cf-904b-c22047b0d365"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Driver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="2" width="61" height="20" uuid="83ac9631-308a-4c9e-b454-b7a63a4815c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Merk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="532" y="2" width="48" height="20" uuid="1f175301-d3fb-4175-846c-38a46cdcce66"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Polisi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="580" y="2" width="63" height="20" uuid="75e8fe11-ff9a-4501-af58-05b27f5942df"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bayar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="641" y="2" width="41" height="20" uuid="3db7fefb-3a58-41c3-aa64-517add8bc2e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Durasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="682" y="2" width="58" height="20" uuid="56f0d5a6-ad7d-4e72-968c-9489384bfb87"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Denda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="740" y="2" width="62" height="20" uuid="dd1f2425-6bb2-4eda-b05b-52abbbd2e271"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="5" width="49" height="20" uuid="2ce7016d-5301-450a-9f45-c05f8580d022"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="50" y="5" width="56" height="20" uuid="ee7d454d-b9a4-4107-9c9d-14c351f6c003"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="106" y="5" width="54" height="20" uuid="77b20f3d-323d-4def-9441-7764b6b6270a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="5" width="82" height="20" uuid="748dfae6-0dde-483c-96a9-88f7f7c7f87b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="242" y="5" width="48" height="20" uuid="2e989321-c9cf-4d4a-9621-5a84b91cb6cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_sewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="5" width="57" height="20" uuid="22121ede-ae02-4ae4-8647-2aaf89e9698e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_sewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="5" width="55" height="20" uuid="cc3341ac-dc70-44ff-9dbd-bfd8d087fe00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ktp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="5" width="70" height="20" uuid="c90058d1-5e66-44bc-80af-cb9c8d1967aa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_driver}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="5" width="61" height="20" uuid="722357dc-a9f8-4fe0-b2fd-1f2d1dfe8967"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{merk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="532" y="5" width="48" height="20" uuid="72f4a78d-af51-4107-87ee-a2740f4c2ddd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nopol}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="580" y="5" width="63" height="20" uuid="b61ba54e-1a1d-4710-a665-f4f0f22f76a7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bayar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="641" y="5" width="41" height="20" uuid="6d9d45b0-db11-49d1-9a81-59db97e7746c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="682" y="5" width="58" height="20" uuid="f8f01090-e62c-4d85-9dca-3b46fb88db87"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{denda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="740" y="5" width="62" height="20" uuid="6e3f25e4-b553-45ac-be42-8d261cb5a2f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="599" y="75" width="181" height="20" uuid="d5fcd39c-4b6a-40dc-a78d-f02112f13c12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kresno Pambudi]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="641" y="10" width="139" height="20" uuid="a9b0c8f0-4b43-474f-aa49-a433e1cb6503"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="599" y="10" width="43" height="20" uuid="e5cef81e-9ce6-422f-bc33-faa95219d49e"/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>
